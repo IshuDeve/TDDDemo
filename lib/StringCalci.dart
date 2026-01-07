@@ -25,9 +25,11 @@ class Stringcalci {
     return parsedNumbers.fold(0, (sum, n) => sum + n);
   }
 
-  void _checkForNegatives(List<int> parsedNumbers) {
-
+  void _checkForNegatives(List<int> nums) {
+    final negatives = nums.where((n) => n < 0).toList();
+    if (negatives.isNotEmpty) {
+      throw Exception("negative numbers not allowed: ${negatives.join(', ')}");
+    }
   }
-
 
 }
