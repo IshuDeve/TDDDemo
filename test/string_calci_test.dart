@@ -19,6 +19,18 @@ void main (){
   });
 
 
+  test('returns sum of multiple numbers', () {
+    expect(cal.add('1,2,3,4'), equals(10));
+  });
+
+  test('supports newline as delimiter', () {
+    expect(cal.add('1\n2,3'), equals(6));
+  });
+
+  test('supports custom delimiter', () {
+    expect(cal.add('//;\n1;2'), equals(3));
+  });
+
   test('throws exception for negative numbers', () {
     expect(
           () => cal.add('1,-2,-3'),
