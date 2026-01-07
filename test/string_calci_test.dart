@@ -18,7 +18,6 @@ void main (){
     expect(cal.add('1,5'), equals(6));
   });
 
-
   test('returns sum of multiple numbers', () {
     expect(cal.add('1,2,3,4'), equals(10));
   });
