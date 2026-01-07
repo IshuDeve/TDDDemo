@@ -1,6 +1,4 @@
-
 class Stringcalci {
-
   int add(String numbers) {
     if (numbers.isEmpty) return 0;
 
@@ -31,5 +29,4 @@ class Stringcalci {
       throw Exception("negative numbers not allowed: ${negatives.join(', ')}");
     }
   }
-
 }
