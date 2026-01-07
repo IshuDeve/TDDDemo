@@ -1,4 +1,4 @@
-class Stringcalci {
+class StringCalci {
   int add(String numbers) {
     if (numbers.isEmpty) return 0;
 
